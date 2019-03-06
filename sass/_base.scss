@@ -1,0 +1,52 @@
+///// SET UP ///////////////////
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /* inherited the box-sizing property in the body selector to apply in the entire document */
+    box-sizing: inherit;
+}
+
+body {
+    /* let us customize the box size model with specific unit without the default values */
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+$color-primary: rgba(0, 0, 0, .95);
+
+// MEDIA QUERIES MANAGER
+
+@mixin respond ($breakpoint) {
+    /* Custom, iPhone Retina */ 
+	@if $breakpoint==smallest-phone {
+		@media (max-width: 320px) { 
+			@content; //allows us to pass a block of code to the mixin
+		} 
+	}
+    /* Extra Small Devices, Phones */ 
+	@if $breakpoint==small-phone {
+		@media (max-width: 480px) { 
+			@content; 
+		} 
+	}
+    /* Small Devices, Tablets */
+	@if $breakpoint==phone {
+		@media (max-width: 768px) { 
+			@content; 
+		} 
+	}
+    /* Medium Devices */
+	@if $breakpoint==tab-port {
+		@media (max-width: 1040px) { 
+			@content; 
+		} 
+	}
+    /* Large Devices, Wide Screens */
+	@if $breakpoint==desktop {
+		@media (max-width: 1200px) { 
+			@content;
+		} 
+	}
+}
