@@ -1,5 +1,5 @@
 .main-container{
-    width: 60%;
+    width: 50%;
     max-width: 850px;
     margin: 90px auto;
     // MEDIA QUERIES
@@ -13,6 +13,8 @@
         margin: 77px auto;
     } 
 }
+
+
 // HEADING
 .title{
     &__list-link{ 
@@ -103,64 +105,28 @@
 
 // MAIN CONTENT 
 .main-content{
-    &__figure{
-         margin: 1.7rem 0;
-        &__img{
-            width: 100%
+
+    &__author{
+
+        &__name{
+
         }
-        &__caption{
-            font-size: 13px;
-            line-height: 16px;
-            margin-top: 1rem;
-            color: rgba(0, 0, 0, 0.65);
+        &__twitter{
+
         }
-    }
-    // TITLE
-    &__header{
-        font-family: "Playfair Display",sans-serif;
-        margin-top: 1.7rem;
-        &__heading{
-            font-size: 36px;
-            line-height: 44px;
-        }
-        // MEDIA QUERIES
-        @include respond(small-phone) {
-            font-size: 28px;
-        } 
     }
     // MAIN  PARAGRAPHS
     &__paragraph{
-        font-family: "Roboto",sans-serif;
-        font-size: 19px;
-        line-height: 28px;
-        margin-top: 2rem;
-        color: $color-primary;
-        // MEDIA QUERIES
-        @include respond(small-phone) {
-            font-size: 17px;
-        } 
-    }
-    &__paragraph--italize{
-        font-size: 23px;
-        font-style: italic;
+        font-family: "PT Serif",sans-serif;
+        font-weight: 400;
+        font-size: 17px;
         letter-spacing: .5px;
-        margin-top: 1rem;
-        // MEDIA QUERIES
-        @include respond(small-phone) {
-            font-size: 16px;
-        } 
-
+        line-height: 28px;
+        margin-top: 1.8rem;
+        color: $color-primary;
     }
-    &__link{
-        margin-top: 28px;
-        &__text{
-            font-size: 18px;
-            line-height: 28px;
-            color: $color-primary;
-            // MEDIA QUERIES
-            @include respond(small-phone) {
-                font-size: 14px;
-            } 
-        }
+
+    .author-email{
+        color: #e90606;
     }
 }
