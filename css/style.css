@@ -132,102 +132,102 @@ body {
     .main-container {
       margin: 77px auto; } }
 
-.title__list-link {
+.header__links {
   display: flex;
-  list-style: none;
-  margin-bottom: 2.2rem;
+  justify-content: center;
+  margin-bottom: 1rem;
   /* Custom, iPhone Retina */
   /* Extra Small Devices, Phones */
   /* Small Devices, Tablets */
   /* Medium Devices */
   /* Large Devices, Wide Screens */ }
   @media (max-width: 480px) {
-    .title__list-link {
+    .header__links {
       margin-bottom: 1rem; } }
-  .title__list-link__items {
-    display: flex;
-    align-items: center; }
-  .title__list-link__text {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #005e75;
-    /* Custom, iPhone Retina */
-    /* Extra Small Devices, Phones */
-    /* Small Devices, Tablets */
-    /* Medium Devices */
-    /* Large Devices, Wide Screens */ }
-    .title__list-link__text:hover {
-      text-decoration: underline; }
-    @media (max-width: 480px) {
-      .title__list-link__text {
-        font-size: 12px; } }
-  .title__list-link__chevron {
-    width: 16px;
-    height: 60%; }
+  .header__links__list {
+    font-family: "Roboto Condensed",sans-serif;
+    margin: 0 12px;
+    color: #e90606;
+    font-size: 15px; }
+    .header__links__list:first-child {
+      list-style: none; }
+    .header__links__list__text {
+      font-size: 13px;
+      line-height: 16px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #e90606;
+      /* Custom, iPhone Retina */
+      /* Extra Small Devices, Phones */
+      /* Small Devices, Tablets */
+      /* Medium Devices */
+      /* Large Devices, Wide Screens */ }
+      @media (max-width: 480px) {
+        .header__links__list__text {
+          font-size: 12px; } }
 
-.title__header {
-  font-family: "Playfair Display",sans-serif; }
-  .title__header__heading {
-    font-size: 52px;
-    line-height: 56px;
-    font-weight: 700;
-    /* Custom, iPhone Retina */
-    /* Extra Small Devices, Phones */
-    /* Small Devices, Tablets */
-    /* Medium Devices */
-    /* Large Devices, Wide Screens */
-    /* Custom, iPhone Retina */
-    /* Extra Small Devices, Phones */
-    /* Small Devices, Tablets */
-    /* Medium Devices */
-    /* Large Devices, Wide Screens */ }
-    @media (max-width: 768px) {
-      .title__header__heading {
-        font-size: 38px;
-        line-height: 45px; } }
-    @media (max-width: 480px) {
-      .title__header__heading {
-        font-size: 32px;
-        line-height: 35px; } }
-  .title__header__paragraph {
-    font-family: 'Roboto',sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    line-height: 20px;
-    color: rgba(0, 0, 0, 0.65);
-    /* Custom, iPhone Retina */
-    /* Extra Small Devices, Phones */
-    /* Small Devices, Tablets */
-    /* Medium Devices */
-    /* Large Devices, Wide Screens */ }
-    @media (max-width: 480px) {
-      .title__header__paragraph {
-        font-size: 14px;
-        line-height: 20px; } }
+.header__heading {
+  font-family: "Lora",sans-serif;
+  font-size: 39px;
+  line-height: 47px;
+  font-weight: 700;
+  text-align: center;
+  /* Custom, iPhone Retina */
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices */
+  /* Large Devices, Wide Screens */
+  /* Custom, iPhone Retina */
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices */
+  /* Large Devices, Wide Screens */ }
+  @media (max-width: 768px) {
+    .header__heading {
+      font-size: 38px;
+      line-height: 45px; } }
+  @media (max-width: 480px) {
+    .header__heading {
+      font-size: 32px;
+      line-height: 35px; } }
 
-.title__author {
-  font-family: 'Roboto',sans-serif;
+.header__social-media {
+  margin: 1rem 0; }
+  .header__social-media__icons {
+    display: block;
+    margin: 0 auto;
+    width: 125px; }
+
+.header__paragraph {
   font-size: 15px;
   line-height: 20px;
-  margin: 1rem 0; }
-  .title__author__name {
+  color: rgba(0, 0, 0, 0.65);
+  /* Custom, iPhone Retina */
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices */
+  /* Large Devices, Wide Screens */ }
+  @media (max-width: 480px) {
+    .header__paragraph {
+      font-size: 14px;
+      line-height: 20px; } }
+
+.main-content__author {
+  font-family: "PT Serif", sans-serif;
+  font-size: 13px;
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center; }
+  .main-content__author__name {
     font-weight: 700;
     letter-spacing: 1px;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.95);
-    /* Custom, iPhone Retina */
-    /* Extra Small Devices, Phones */
-    /* Small Devices, Tablets */
-    /* Medium Devices */
-    /* Large Devices, Wide Screens */ }
-    @media (max-width: 480px) {
-      .title__author__name {
-        font-size: 12px; } }
+    margin: 0 5px;
+    color: #e90606; }
+  .main-content__author__twitter {
+    width: 20px;
+    height: 17px; }
 
 .main-content__paragraph {
   font-family: "PT Serif",sans-serif;
@@ -243,176 +243,131 @@ body {
 
 .footer {
   display: flex;
-  padding: 38px;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin-bottom: 4rem;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.95);
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
-  .footer__heading-logo {
-    display: inline-flex;
-    flex: 0 0 100%;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    margin-left: 2rem; }
-    .footer__heading-logo__img {
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  margin: 2rem auto;
+  border-top: 1px solid #D7D7D9; }
+  .footer .figure {
+    margin: 0 auto; }
+    .footer .figure__logo {
+      display: block;
+      margin: 2rem auto;
+      width: 110px; }
+    .footer .figure__social {
       width: 170px;
-      height: 100%;
-      margin: 0 auto;
-      /* Custom, iPhone Retina */
-      /* Extra Small Devices, Phones */
-      /* Small Devices, Tablets */
-      /* Medium Devices */
-      /* Large Devices, Wide Screens */
+      margin-bottom: 2rem; }
+  .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+    border-top: 1px solid #D7D7D9;
+    border-bottom: 1px solid #D7D7D9; }
+  .footer__first-col {
+    margin-left: 2rem; }
+    .footer__first-col__items {
+      list-style: none;
+      padding: 5px 0;
       /* Custom, iPhone Retina */
       /* Extra Small Devices, Phones */
       /* Small Devices, Tablets */
       /* Medium Devices */
       /* Large Devices, Wide Screens */ }
-      @media (max-width: 768px) {
-        .footer__heading-logo__img {
-          margin-left: 12rem; } }
       @media (max-width: 480px) {
-        .footer__heading-logo__img {
-          margin-left: 3rem; } }
-  .footer__heading {
-    font-family: "Playfair Display",sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px; }
-  .footer__left-container {
-    flex: 0 0 340px;
-    padding-bottom: 5rem;
+        .footer__first-col__items {
+          margin-left: 10px;
+          margin-right: 32px; } }
+      .footer__first-col__items__link {
+        font-size: 16.5px;
+        line-height: 12px;
+        text-decoration: none;
+        letter-spacing: .5px;
+        color: #686c73; }
+        .footer__first-col__items__link:hover {
+          color: rgba(0, 0, 0, 0.95); }
+  .footer__second-col {
     /* Custom, iPhone Retina */
     /* Extra Small Devices, Phones */
     /* Small Devices, Tablets */
     /* Medium Devices */
     /* Large Devices, Wide Screens */ }
-    .footer__left-container__img {
-      margin-top: 1rem;
-      width: 280px; }
-    @media (max-width: 768px) {
-      .footer__left-container {
-        flex: 0 0 100%; } }
-  .footer__middle-container {
-    height: 340px;
-    flex: 0 0 350px;
-    border-right: 1px solid rgba(0, 0, 0, 0.15);
-    border-left: 1px solid rgba(0, 0, 0, 0.15);
-    /* Custom, iPhone Retina */
-    /* Extra Small Devices, Phones */
-    /* Small Devices, Tablets */
-    /* Medium Devices */
-    /* Large Devices, Wide Screens */
-    /* Custom, iPhone Retina */
-    /* Extra Small Devices, Phones */
-    /* Small Devices, Tablets */
-    /* Medium Devices */
-    /* Large Devices, Wide Screens */
-    /* Custom, iPhone Retina */
-    /* Extra Small Devices, Phones */
-    /* Small Devices, Tablets */
-    /* Medium Devices */
-    /* Large Devices, Wide Screens */ }
-    @media (max-width: 1040px) {
-      .footer__middle-container {
-        flex: 0 0 300px; } }
-    @media (max-width: 768px) {
-      .footer__middle-container {
-        flex: 0 0 250px;
-        border-left: none; } }
     @media (max-width: 480px) {
-      .footer__middle-container {
-        height: 310px;
-        border-right: none; } }
-    .footer__middle-container-list {
-      font-family: "Roboto",sans-serif;
-      font-size: 15px;
-      line-height: 20px;
-      list-style: none; }
-    .footer__middle-container__item {
-      margin-top: 8px;
-      padding-top: 12px; }
-    .footer__middle-container__link {
-      text-decoration: none;
-      color: #005e75; }
-      .footer__middle-container__link:hover {
-        text-decoration: underline; }
-  .footer__right-container {
-    flex: 0 0 300px;
-    /* Custom, iPhone Retina */
-    /* Extra Small Devices, Phones */
-    /* Small Devices, Tablets */
-    /* Medium Devices */
-    /* Large Devices, Wide Screens */ }
-    @media (max-width: 768px) {
-      .footer__right-container {
-        flex: 0 0 250px;
-        border-left: none; } }
-    .footer__right-container__paragraph {
-      font-family: "Roboto",sans-serif;
-      font-size: 15px;
-      line-height: 20px;
-      margin: 1rem; }
-    .footer__right-container__social {
-      width: 150px;
-      margin-bottom: 3rem;
-      margin-top: 10px; }
-  .footer__legal {
-    margin-top: 3rem; }
-    .footer__legal__btn {
-      font-size: 14px;
-      line-height: 20px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      padding: 11px 32px;
-      display: inline-block;
-      text-align: center;
-      border-width: 0;
-      border-radius: 0;
-      border: 3px solid #00afdb;
-      border-radius: 4px;
-      color: rgba(0, 0, 0, 0.95);
-      background: #fff;
-      padding-left: 24px;
-      padding-right: 24px;
-      margin-bottom: 36px; }
-    .footer__legal__list {
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Roboto',sans-serif;
-      font-size: 15px;
-      line-height: 16px;
-      width: 70%;
-      color: rgba(0, 0, 0, 0.65);
+      .footer__second-col {
+        margin-bottom: 2rem; } }
+    .footer__second-col__items {
+      list-style: none;
+      padding: 5px 0;
       /* Custom, iPhone Retina */
       /* Extra Small Devices, Phones */
       /* Small Devices, Tablets */
       /* Medium Devices */
       /* Large Devices, Wide Screens */ }
-      @media (max-width: 768px) {
-        .footer__legal__list {
-          flex-direction: column;
-          width: 90%; } }
-      .footer__legal__list__items {
-        display: flex; }
-        .footer__legal__list__items__logo {
-          height: 60%;
-          width: 100px; }
-        .footer__legal__list__items__text {
-          display: block;
-          text-align: left;
-          margin-left: 1rem;
-          /* Custom, iPhone Retina */
-          /* Extra Small Devices, Phones */
-          /* Small Devices, Tablets */
-          /* Medium Devices */
-          /* Large Devices, Wide Screens */ }
-          @media (max-width: 768px) {
-            .footer__legal__list__items__text {
-              margin-top: 1rem; } }
+      @media (max-width: 480px) {
+        .footer__second-col__items {
+          margin-right: 32px; } }
+      .footer__second-col__items__link {
+        font-size: 16.5px;
+        line-height: 12px;
+        text-decoration: none;
+        letter-spacing: .5px;
+        color: #686c73; }
+        .footer__second-col__items__link:hover {
+          color: rgba(0, 0, 0, 0.95); }
+  .footer__third-col {
+    /* Custom, iPhone Retina */
+    /* Extra Small Devices, Phones */
+    /* Small Devices, Tablets */
+    /* Medium Devices */
+    /* Large Devices, Wide Screens */ }
+    @media (max-width: 480px) {
+      .footer__third-col {
+        margin-bottom: 2rem; } }
+    .footer__third-col__items {
+      list-style: none;
+      padding: 5px 0;
+      /* Custom, iPhone Retina */
+      /* Extra Small Devices, Phones */
+      /* Small Devices, Tablets */
+      /* Medium Devices */
+      /* Large Devices, Wide Screens */ }
+      @media (max-width: 480px) {
+        .footer__third-col__items {
+          margin-left: 10px;
+          margin-right: 32px; } }
+      .footer__third-col__items__link {
+        font-size: 16.5px;
+        line-height: 12px;
+        text-decoration: none;
+        letter-spacing: .5px;
+        color: #686c73; }
+        .footer__third-col__items__link:hover {
+          color: rgba(0, 0, 0, 0.95); }
+  .footer__fourth-col {
+    margin-right: 2rem; }
+    .footer__fourth-col__items {
+      list-style: none;
+      padding: 5px 0;
+      /* Custom, iPhone Retina */
+      /* Extra Small Devices, Phones */
+      /* Small Devices, Tablets */
+      /* Medium Devices */
+      /* Large Devices, Wide Screens */ }
+      @media (max-width: 480px) {
+        .footer__fourth-col__items {
+          margin-right: 32px; } }
+      .footer__fourth-col__items__link {
+        font-size: 16.5px;
+        line-height: 12px;
+        text-decoration: none;
+        letter-spacing: .5px;
+        color: #686c73; }
+        .footer__fourth-col__items__link:hover {
+          color: rgba(0, 0, 0, 0.95); }
+  .footer .copyright {
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: .5px;
+    padding: 0 16px;
+    color: #8b8d91; }
