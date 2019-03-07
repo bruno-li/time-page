@@ -4,6 +4,7 @@
     flex-direction: column;
     margin: 2rem auto;
     border-top: 1px solid #D7D7D9;
+    
     // LOGO AND SOCIAL MEDIA
     .figure {
         margin: 0 auto;
@@ -28,14 +29,15 @@
     // FIRST COL
     &__first-col{
         margin-left: 2rem;
+         // MEDIA QUERIES
+          @include respond(small-phone){
+           margin-left: 10px;
+           flex: 0 0 45%;
+          }
         &__items{
             list-style: none;
             padding: 5px 0;
-            // MEDIA QUERIES
-            @include respond(small-phone){
-                margin-left:  10px;
-                margin-right: 32px;
-            }
+   
             &__link{
                 font-size: 16.5px;
                 line-height: 12px;
@@ -53,15 +55,12 @@
         // MEDIA QUERIES
         @include respond(small-phone){
             margin-bottom: 2rem;
+            flex: 0 0 45%;
+
         }
         &__items{
             list-style: none;
             padding: 5px 0;
-            // MEDIA QUERIES
-            @include respond(small-phone){
-                margin-right: 32px;
-
-            }
             &__link{
                 font-size: 16.5px;
                 line-height: 12px;
@@ -79,14 +78,17 @@
         // MEDIA QUERIES
         @include respond(small-phone){
             margin-bottom: 2rem;
+            margin-left: 10px;
+            flex: 0 0 45%;
+
         }
         &__items{
             list-style: none;
             padding: 5px 0;
                  // MEDIA QUERIES
                  @include respond(small-phone){
-                     margin-left: 10px;
-                    margin-right: 32px;
+                    //  margin-left: 10px;
+                    // margin-right: 32px;
                 }
             &__link{
                 font-size: 16.5px;
@@ -104,12 +106,17 @@
     // FOURTH COL
     &__fourth-col{
         margin-right: 2rem;
+        // MEDIA QUERIES
+        @include respond(phone){
+            margin-right: 0;
+            flex: 0 0 45%;
+        }
         &__items{
             list-style: none;
             padding: 5px 0;
                  // MEDIA QUERIES
                  @include respond(small-phone){
-                    margin-right: 32px;
+                    // margin-right: 32px;
                 }
             &__link{
                 font-size: 16.5px;

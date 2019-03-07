@@ -42,6 +42,10 @@
             &__img{
                 width: 75px;
             }
+            // MEDIA QUERIES
+            @include respond(small-phone){
+                margin-left: 4rem;
+            }
         }
     }
     
@@ -58,6 +62,9 @@
         @include respond(phone) {
             margin-right: 0;
         }  
+        @include respond(small-phone){
+                display: none;
+        }
         // LINKS
         &__list{
             font-size: 12px;

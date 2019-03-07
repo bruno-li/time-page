@@ -10,10 +10,10 @@
         width: 90%;
     }
     @include respond(small-phone) {
+        width: 95%;
         margin: 77px auto;
     } 
 }
-
 
 // HEADING
 .header{
@@ -63,11 +63,15 @@
                 line-height: 45px;
             }
             @include respond(small-phone) {
-                font-size: 32px;
-                line-height: 35px;
+                font-size: 25px;
+                line-height: 32px;
             } 
         }
-
+        &__figure{
+            &__img{
+                width: 100%;
+            }
+        }
         // SOCIAL MEDIA ICON
         &__social-media{
             margin: 1rem 0;
@@ -92,7 +96,6 @@
 
 // MAIN CONTENT 
 .main-content{
-
     &__author{
         font-family: "PT Serif", sans-serif;
         font-size: 13px;

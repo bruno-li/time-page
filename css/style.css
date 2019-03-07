@@ -57,13 +57,27 @@ body {
       @media (max-width: 1040px) {
         .navbar__left__menu__logo {
           margin-right: 1.3rem; } }
-    .navbar__left__logo__img {
-      width: 75px; }
+    .navbar__left__logo {
+      /* Custom, iPhone Retina */
+      /* Extra Small Devices, Phones */
+      /* Small Devices, Tablets */
+      /* Medium Devices */
+      /* Large Devices, Wide Screens */ }
+      .navbar__left__logo__img {
+        width: 75px; }
+      @media (max-width: 480px) {
+        .navbar__left__logo {
+          margin-left: 4rem; } }
   .navbar__right {
     display: flex;
     align-items: center;
     list-style: none;
     margin-right: 4rem;
+    /* Custom, iPhone Retina */
+    /* Extra Small Devices, Phones */
+    /* Small Devices, Tablets */
+    /* Medium Devices */
+    /* Large Devices, Wide Screens */
     /* Custom, iPhone Retina */
     /* Extra Small Devices, Phones */
     /* Small Devices, Tablets */
@@ -80,6 +94,9 @@ body {
     @media (max-width: 768px) {
       .navbar__right {
         margin-right: 0; } }
+    @media (max-width: 480px) {
+      .navbar__right {
+        display: none; } }
     .navbar__right__list {
       font-size: 12px;
       line-height: 24px;
@@ -130,6 +147,7 @@ body {
       width: 90%; } }
   @media (max-width: 480px) {
     .main-container {
+      width: 95%;
       margin: 77px auto; } }
 
 .header__links {
@@ -190,8 +208,11 @@ body {
       line-height: 45px; } }
   @media (max-width: 480px) {
     .header__heading {
-      font-size: 32px;
-      line-height: 35px; } }
+      font-size: 25px;
+      line-height: 32px; } }
+
+.header__figure__img {
+  width: 100%; }
 
 .header__social-media {
   margin: 1rem 0; }
@@ -264,19 +285,19 @@ body {
     border-top: 1px solid #D7D7D9;
     border-bottom: 1px solid #D7D7D9; }
   .footer__first-col {
-    margin-left: 2rem; }
+    margin-left: 2rem;
+    /* Custom, iPhone Retina */
+    /* Extra Small Devices, Phones */
+    /* Small Devices, Tablets */
+    /* Medium Devices */
+    /* Large Devices, Wide Screens */ }
+    @media (max-width: 480px) {
+      .footer__first-col {
+        margin-left: 10px;
+        flex: 0 0 45%; } }
     .footer__first-col__items {
       list-style: none;
-      padding: 5px 0;
-      /* Custom, iPhone Retina */
-      /* Extra Small Devices, Phones */
-      /* Small Devices, Tablets */
-      /* Medium Devices */
-      /* Large Devices, Wide Screens */ }
-      @media (max-width: 480px) {
-        .footer__first-col__items {
-          margin-left: 10px;
-          margin-right: 32px; } }
+      padding: 5px 0; }
       .footer__first-col__items__link {
         font-size: 16.5px;
         line-height: 12px;
@@ -293,18 +314,11 @@ body {
     /* Large Devices, Wide Screens */ }
     @media (max-width: 480px) {
       .footer__second-col {
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem;
+        flex: 0 0 45%; } }
     .footer__second-col__items {
       list-style: none;
-      padding: 5px 0;
-      /* Custom, iPhone Retina */
-      /* Extra Small Devices, Phones */
-      /* Small Devices, Tablets */
-      /* Medium Devices */
-      /* Large Devices, Wide Screens */ }
-      @media (max-width: 480px) {
-        .footer__second-col__items {
-          margin-right: 32px; } }
+      padding: 5px 0; }
       .footer__second-col__items__link {
         font-size: 16.5px;
         line-height: 12px;
@@ -321,7 +335,9 @@ body {
     /* Large Devices, Wide Screens */ }
     @media (max-width: 480px) {
       .footer__third-col {
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem;
+        margin-left: 10px;
+        flex: 0 0 45%; } }
     .footer__third-col__items {
       list-style: none;
       padding: 5px 0;
@@ -330,10 +346,6 @@ body {
       /* Small Devices, Tablets */
       /* Medium Devices */
       /* Large Devices, Wide Screens */ }
-      @media (max-width: 480px) {
-        .footer__third-col__items {
-          margin-left: 10px;
-          margin-right: 32px; } }
       .footer__third-col__items__link {
         font-size: 16.5px;
         line-height: 12px;
@@ -343,7 +355,16 @@ body {
         .footer__third-col__items__link:hover {
           color: rgba(0, 0, 0, 0.95); }
   .footer__fourth-col {
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    /* Custom, iPhone Retina */
+    /* Extra Small Devices, Phones */
+    /* Small Devices, Tablets */
+    /* Medium Devices */
+    /* Large Devices, Wide Screens */ }
+    @media (max-width: 768px) {
+      .footer__fourth-col {
+        margin-right: 0;
+        flex: 0 0 45%; } }
     .footer__fourth-col__items {
       list-style: none;
       padding: 5px 0;
@@ -352,9 +373,6 @@ body {
       /* Small Devices, Tablets */
       /* Medium Devices */
       /* Large Devices, Wide Screens */ }
-      @media (max-width: 480px) {
-        .footer__fourth-col__items {
-          margin-right: 32px; } }
       .footer__fourth-col__items__link {
         font-size: 16.5px;
         line-height: 12px;
